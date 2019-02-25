@@ -9,12 +9,52 @@
     
     
     <script>
+        function p1()
+        {
         var sum = 0;
         for (var i = 117; i >= 11; i -= 8)
         {
             sum += i;
+            
         }
-        document.write("<p> sum is:" + sum);
+        return sum;
+        }
+        document.write("<p> the sum using for loop:" + p1());
+
+        function p2() {
+            var sum = 0; i = 117;
+            while (i >= 11) {
+                sum += i;
+                i -= 8;
+            }
+            return sum;
+        }
+        document.write("<p> the sum using while loop:" + p2());
+
+        var bird =
+        {
+            genus: "corvus",
+            species: "corvax",
+            commonName: "raven",
+            callType: "squawky",
+            quote: "Nevermore",
+            maxOffspring: 5,
+            noisy: true,
+            deadly: false
+        };
+
+        var bear =
+        {
+            genus: "ursus",
+            species: "arctos",
+            commonName: "brown bear",
+            callType: "roar",
+            quote: "",
+            maxOffspring: 3,
+            noisy: true,
+            deadly: true
+        }
+        bear.quote = "hii";
     </script>
 </body>
 </html>
